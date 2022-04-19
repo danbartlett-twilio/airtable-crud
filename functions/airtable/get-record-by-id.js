@@ -22,7 +22,7 @@ exports.handler = function (context, event, callback) {
 
   base(event.targetTable).find(event.targetRecordId, function(err, record) {
     if (err) { console.error(err); return; }
-    callback(null, records); 
+    callback(null, record); 
     console.log('Retrieved', record.id);
   });
   
