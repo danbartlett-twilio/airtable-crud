@@ -6,14 +6,12 @@
 
 ### Project Overview
 
-In my first 6 months at Twilio, I found myself using Airtable for persistance when building demos -- especially in Studio. After adding different parts of Airtable CRUD for different projects, I created a library that I could re-use. These functions make it easy to add a data layer to your demos AND use Airtable to show changing data in real time during demos. With these functions you can be accessing Airtable from Twilio in just a few minutes...
+I have found myself using Airtable for persistance when building demos -- especially in Studio. After adding different parts of Airtable CRUD for different projects, I created a library that I could re-use. These functions make it easy to add a data layer to your POCs and demos AND use Airtable to show changing data in real time during demos. With these functions you can be accessing Airtable from Twilio in just a few minutes...
 
 ***Deployed Functions***
 
 ![deployed-functions](https://user-images.githubusercontent.com/78064764/144476245-c9e6bde3-76d5-4246-af77-aa852357558e.png)
 <p>&nbsp;</p>
-
-Several SEs have found these functions in my [SMS Demo Platform](https://github.com/danbartlett-twilio/oidp) so I figured that I would pull them out into their own project and add some documentation. 
 
 You should be able to just add your Airtable API Key and Base ID to the .env file to get going with a **twilio serverless:deploy**. You can call these functions directly from their deployed URL, from other functions, or from Studio. You can also use these functions as a basis to write your own functions. You could just copy and paste the functions directy into your own serverless project to easily add Airtable CRUD.
 
